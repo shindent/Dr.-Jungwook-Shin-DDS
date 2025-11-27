@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Jungwook Shin Dentist</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Noto Sans KR", sans-serif;
+        background-color: #111;
+        color: #f2f2f2;
+    }
+
+    header {
+        background-color: #000;
+        padding: 40px 20px;
+        text-align: center;
+        border-bottom: 2px solid #bfa66b;
+    }
+
+    header h1 {
+        color: #bfa66b;
+        font-size: 36px;
+        margin: 0;
+    }
+
+    header p {
+        margin-top: 10px;
+        color: #ccc;
+        font-size: 18px;
+    }
+
+    .lang-buttons {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    button {
+        background-color: #bfa66b;
+        color: #000;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        margin: 0 10px;
+    }
+
+    button:hover {
+        background-color: #d6c58a;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #1a1a1a;
+        border: 1px solid #2c2c2c;
+        border-radius: 10px;
+    }
+
+    h2 {
+        color: #bfa66b;
+        border-left: 4px solid #bfa66b;
+        padding-left: 10px;
+    }
+
+    .info-section {
+        margin-bottom: 40px;
+    }
+
+    .contact {
+        line-height: 1.8;
+        font-size: 18px;
+    }
+
+    a {
+        color: #bfa66b;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    iframe {
+        width: 100%;
+        height: 350px;
+        border: none;
+        border-radius: 8px;
+        margin-top: 15px;
+    }
+
+    footer {
+        text-align: center;
+        color: #777;
+        padding: 30px 0;
+        margin-top: 40px;
+        border-top: 1px solid #333;
+        font-size: 14px;
+    }
+</style>
+
+<script>
+function showKR() {
+    document.getElementById("kr").style.display = "block";
+    document.getElementById("en").style.display = "none";
+}
+
+function showEN() {
+    document.getElementById("kr").style.display = "none";
+    document.getElementById("en").style.display = "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Dr. Jungwook Shin, DDS</h1>
+    <p>Seoul Dental</p>
+
+    <div class="lang-buttons">
+        <button onclick="showKR()">한국어</button>
+        <button onclick="showEN()">English</button>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- 한국어 버전 -->
+    <div id="kr">
+        <div class="info-section">
+            <h2>치과 소개</h2>
+            <p>
+                서울대학교 치과대학을 졸업하고, 캐나다에서 10년 이상 진료해온 치과의사 신정욱입니다.<br>
+                오랜 임상 경험과 연구 기반의 진료로 정확한 진단과 높은 만족도를 제공합니다.<br>
+                환자 개개인의 상태에 맞춘 맞춤 치료를 최우선으로 합니다.
+            </p>
+        </div>
+
+        <div class="info-section">
+            <h2>치과 위치</h2>
+            <p class="contact">
+                📍 <strong>서울치과 Seoul Dental</strong><br>
+                7191 Yonge St Suite 611, Markham, ON L3T 0C4
+            </p>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.554572769427!2d-79.4271169234771!3d43.82252437109379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2c3f5a37de75%3A0x8bbf90e1a5da760c!2s7191%20Yonge%20St%20%23611%2C%20Thornhill%2C%20ON%20L3T%200C4!5e0!3m2!1sko!2sca!4v1732735200000"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="info-section">
+            <h2>연락처</h2>
+            <p class="contact">
+                📞 전화: <a href="tel:+14372997654">(437) 299-7654</a><br>
+                ✉ 이메일: <a href="mailto:info@seouldental.ca">info@seouldental.ca</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- 영어 버전 -->
+    <div id="en" style="display:none;">
+        <div class="info-section">
+            <h2>About the Clinic</h2>
+            <p>
+                Dr. Jungwook Shin graduated from Seoul National University School of Dentistry and has over 10 years of clinical experience in Canada.<br>
+                With extensive clinical experience and research-based treatment, we provide accurate diagnosis and high patient satisfaction.<br>
+                We prioritize personalized treatment tailored to each patient’s condition.
+            </p>
+        </div>
+
+        <div class="info-section">
+            <h2>Location</h2>
+            <p class="contact">
+                📍 <strong>Seoul Dental</strong><br>
+                7191 Yonge St Suite 611, Markham, ON L3T 0C4
+            </p>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.554572769427!2d-79.4271169234771!3d43.82252437109379!2m3!1f0!2f0!3f
